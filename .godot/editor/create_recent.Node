@@ -1,6 +1,9 @@
+AudioStreamPlayer
+MeshInstance3D
+DirectionalLight3D
+Camera3D
 VehicleWheel3D
 VehicleBody3D
-MeshInstance3D
 CollisionShape3D
 StaticBody3D
 Node
