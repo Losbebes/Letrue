@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwa5yremqpawb"]
+[gd_scene load_steps=8 format=3 uid="uid://51kk7kpdvlgi"]
 
 [ext_resource type="Texture2D" uid="uid://bw8uodl62hkjy" path="res://Shoes/b2_shoesshoes_d01c01.png" id="1_qeob5"]
 
@@ -31,9 +31,21 @@ blend_shape_mode = 0
 height = 6.92521
 radius = 9.17535
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ei6bj"]
+size = Vector3(565, 1, 565.575)
+
+[sub_resource type="BoxMesh" id="BoxMesh_es3rt"]
+size = Vector3(565, 1, 565)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_spfv4"]
+albedo_color = Color(0.290196, 0.290196, 0.290196, 1)
+metallic = 0.41
+metallic_texture_channel = 3
+
 [node name="Node" type="Node"]
 
 [node name="VehicleBody3D" type="VehicleBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.06933, 0)
 
 [node name="b2_shoes_shoes" type="MeshInstance3D" parent="VehicleBody3D"]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
@@ -46,3 +58,12 @@ shape = SubResource("CylinderShape3D_s27wv")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="VehicleBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.47301, -0.0937259, 6.41031)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_ei6bj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_es3rt")
+surface_material_override/0 = SubResource("StandardMaterial3D_spfv4")

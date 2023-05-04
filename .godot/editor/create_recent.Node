@@ -1,5 +1,6 @@
-VehicleWheel3D
-CollisionShape3D
 MeshInstance3D
+CollisionShape3D
+StaticBody3D
+VehicleWheel3D
 VehicleBody3D
 Node
