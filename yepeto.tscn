@@ -27,9 +27,8 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_s27wv"]
-height = 6.92521
-radius = 9.17535
+[sub_resource type="BoxShape3D" id="BoxShape3D_045nr"]
+size = Vector3(14.706, 7.1196, 14.662)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ei6bj"]
 size = Vector3(565, 1, 565.575)
@@ -54,10 +53,23 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VehicleBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.270256, 3.52544, 2.6246)
-shape = SubResource("CylinderShape3D_s27wv")
+shape = SubResource("BoxShape3D_045nr")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="VehicleBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.47301, -0.0937259, 6.41031)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6262, -0.278332, 8.32733)
+wheel_radius = 2.0
+
+[node name="VehicleWheel3D3" type="VehicleWheel3D" parent="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6262, -0.278332, -3.10413)
+wheel_radius = 2.0
+
+[node name="VehicleWheel3D2" type="VehicleWheel3D" parent="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07901, -0.278332, 8.32733)
+wheel_radius = 2.0
+
+[node name="VehicleWheel3D4" type="VehicleWheel3D" parent="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.07901, -0.278332, -3.10413)
+wheel_radius = 2.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
