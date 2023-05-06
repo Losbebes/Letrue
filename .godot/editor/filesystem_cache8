@@ -1,13 +1,14 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683320537
+::res://::1683402598
 bacano.gd::GDScript::-1::1683309096::0::1::::<>VehicleBody3D<>::
-carrito.tscn::PackedScene::2439219006413604054::1683316932::0::1::::<><>::res://bacano.gd<>uid://bw8uodl62hkjy<>uid://bwuj7v3hxch81
+carrito.tscn::PackedScene::2439219006413604054::1683332328::0::1::::<><>::res://bacano.gd<>uid://bw8uodl62hkjy<>uid://bwuj7v3hxch81
 Defi.mp3::AudioStreamMP3::3972467543744612088::1683309095::1683309095::1::::<><>::
 icon.svg::CompressedTexture2D::5589395632300840368::1683158352::1683309227::1::::<><>::
+muicia.gd::GDScript::-1::1683332328::0::1::::<>CharacterBody3D<>::
 README.md::TextFile::-1::1683157040::0::1::::<><>::
 sda avsbdva.txt::TextFile::-1::1683158049::0::1::::<><>::
-yepeto.tscn::PackedScene::2159965855494866744::1683309798::0::1::::<><>::res://bacano.gd<>uid://bw8uodl62hkjy<>uid://bwuj7v3hxch81<>uid://7lunysnl7n52
-::res://modelo/::1683320516
+yepeto.tscn::PackedScene::2159965855494866744::1683332328::0::1::::<><>::res://muicia.gd<>uid://bjckjxltm8ewc<>uid://7lunysnl7n52
+::res://modelo/::1683320540
 murcosountitled.glb::PackedScene::3403953605755256034::1683320516::1683320539::1::::<><>::uid://bjckjxltm8ewc
 murcosountitled_color.png::CompressedTexture2D::3022873499926834150::1683320539::1683320540::1::::<><>::
 ::res://Pista/::1683309096

@@ -1,11 +1,12 @@
+Camera3D
+CollisionShape3D
+CharacterBody3D
 AnimationTree
 AnimationPlayer
 AudioStreamPlayer
 MeshInstance3D
 DirectionalLight3D
-Camera3D
 VehicleWheel3D
 VehicleBody3D
-CollisionShape3D
 StaticBody3D
 Node
